@@ -1,1 +1,5 @@
-<p>gpsmodule-details works!</p>
+<div class="container mt-5 p-4 border rounded shadow">
+  <h2>Détails du module GPS</h2>
+  <p *ngIf="gpsModuleId">Vous avez sélectionné le module GPS avec l'ID : {{ gpsModuleId }}</p>
+  <p *ngIf="!gpsModuleId" class="text-danger">Aucun module GPS sélectionné.</p>
+</div>
