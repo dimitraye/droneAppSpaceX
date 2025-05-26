@@ -8,11 +8,13 @@ import { DroneDetailsComponent } from './drones/drone-details/drone-details.comp
 import { CameraDetailsComponent } from './cameras/camera-details/camera-details.component';
 import { GpsmoduleDetailsComponent } from './gpsmodules/gpsmodule-details/gpsmodule-details.component';
 import { FlightcontrollerDetailsComponent } from './flightcontrollers/flightcontroller-details/flightcontroller-details.component';
+import { DroneFormComponent } from './drones/drone-form/drone-form.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'drones', component: DroneListComponent },
   { path: 'drone-details/:id', component: DroneDetailsComponent },
+  { path: 'drone-form', component: DroneFormComponent },
   { path: 'cameras', component: CameraListComponent },
   { path: 'camera-details/:id', component: CameraDetailsComponent },
   { path: 'gpsmodules', component: GpsmoduleListComponent },
