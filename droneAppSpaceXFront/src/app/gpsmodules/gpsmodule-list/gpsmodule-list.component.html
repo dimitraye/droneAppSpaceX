@@ -1,1 +1,23 @@
-<p>gpsmodule-list works!</p>
+<div class="gpsmodule-box container mt-5 p-4">
+  <h2 class="mb-3">Liste des GPS Modules</h2>
+  <button class="btn btn-success mb-3" (click)="createGpsModule()">Créer un GPS Module</button>
+
+  <div class="scroll-box">
+    <ul class="list-group">
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        *ngFor="let gps of gpsModules"
+        [class.active]="gps.id === selectedGpsModule"
+      >
+        <span class="gpsmodule-name" (click)="selectGpsModule(gps.id)">
+          {{ gps.model }} ({{ gps.gpsPrecision }})
+        </span>
+
+        <div class="btn-group">
+          <button class="btn btn-sm btn-outline-primary" (click)="editGpsModule(gps.id, $event)">Modifier</button>
+          <button class="btn btn-sm btn-outline-danger" (click)="deleteGpsModule(gps.id, $event)">Supprimer</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,1 +1,46 @@
-<p>gpsmodule-form works!</p>
+<div class="container mt-4">
+  <h2>Créer un Module GPS</h2>
+  <form>
+    <div class="mb-3">
+      <label for="model" class="form-label">Modèle</label>
+      <input type="text" id="model" class="form-control" name="model" />
+    </div>
+
+    <div class="mb-3">
+      <label for="latitude" class="form-label">Latitude</label>
+      <input type="number" step="any" id="latitude" class="form-control" name="latitude" />
+    </div>
+
+    <div class="mb-3">
+      <label for="longitude" class="form-label">Longitude</label>
+      <input type="number" step="any" id="longitude" class="form-control" name="longitude" />
+    </div>
+
+    <div class="mb-3">
+      <label for="altitude" class="form-label">Altitude (m)</label>
+      <input type="number" step="any" id="altitude" class="form-control" name="altitude" />
+    </div>
+
+    <div class="mb-3">
+      <label for="features" class="form-label">Fonctionnalités</label>
+      <textarea id="features" class="form-control" name="features" rows="2"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="gpsPrecision" class="form-label">Précision GPS</label>
+      <input type="text" id="gpsPrecision" class="form-control" name="gpsPrecision" />
+    </div>
+
+    <div class="form-check mb-2">
+      <input type="checkbox" id="geofencingEnabled" class="form-check-input" name="geofencingEnabled" />
+      <label class="form-check-label" for="geofencingEnabled">Geofencing activé</label>
+    </div>
+
+    <div class="form-check mb-4">
+      <input type="checkbox" id="realTimeTrackingEnabled" class="form-check-input" name="realTimeTrackingEnabled" />
+      <label class="form-check-label" for="realTimeTrackingEnabled">Suivi en temps réel activé</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Créer</button>
+  </form>
+</div>
