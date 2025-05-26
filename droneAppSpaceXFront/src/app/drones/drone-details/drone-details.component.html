@@ -1,1 +1,5 @@
-<p>drone-details works!</p>
+<div class="container mt-5 p-4 border rounded shadow">
+  <h2>Détails du drone</h2>
+  <p *ngIf="droneId">Vous avez sélectionné le drone avec l'ID : {{ droneId }}</p>
+  <p *ngIf="!droneId" class="text-danger">Aucun drone sélectionné.</p>
+</div>
