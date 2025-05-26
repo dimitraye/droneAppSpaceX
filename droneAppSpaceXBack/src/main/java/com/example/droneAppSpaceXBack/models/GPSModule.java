@@ -27,9 +27,13 @@ public class GPSModule {
     private String features; // ex: "RTK, geofencing, waypoint navigation"
 
     @Column(length = 250)
-    private String precision; // ex: "1 mètre", "5 cm (RTK)"
+    private String gpsPrecision; // ex: "1 mètre", "5 cm (RTK)"
 
     private Boolean geofencingEnabled;
 
     private Boolean realTimeTrackingEnabled;
+
+    public Long getId() {
+        return id;
+    }
 }

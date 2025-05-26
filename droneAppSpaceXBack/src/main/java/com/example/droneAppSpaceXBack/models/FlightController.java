@@ -33,9 +33,8 @@ public class FlightController {
 
     private Boolean emergencyReturnEnabled;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "flight_controller_gps_module",
-            joinColumns = @JoinColumn(name = "flight_controller_id"),
-            inverseJoinColumns = @JoinColumn(name = "gps_module_id"))
-    private List<GPSModule> gpsModules; // permet au contrôleur de vol de recevoir plusieurs modules GPS
+    public Long getId() {
+        return id;
+    }
+
 }
