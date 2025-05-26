@@ -37,4 +37,63 @@ public class FlightController {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getSupportedFlightModes() {
+        return supportedFlightModes;
+    }
+
+    public void setSupportedFlightModes(String supportedFlightModes) {
+        this.supportedFlightModes = supportedFlightModes;
+    }
+
+    public Double getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(Double currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    public Double getTargetAltitude() {
+        return targetAltitude;
+    }
+
+    public void setTargetAltitude(Double targetAltitude) {
+        this.targetAltitude = targetAltitude;
+    }
+
+    public String getCommandInterpretation() {
+        return commandInterpretation;
+    }
+
+    public void setCommandInterpretation(String commandInterpretation) {
+        this.commandInterpretation = commandInterpretation;
+    }
+
+    public Boolean getAutoStabilizationEnabled() {
+        return autoStabilizationEnabled;
+    }
+
+    public void setAutoStabilizationEnabled(Boolean autoStabilizationEnabled) {
+        this.autoStabilizationEnabled = autoStabilizationEnabled;
+    }
+
+    public Boolean getEmergencyReturnEnabled() {
+        return emergencyReturnEnabled;
+    }
+
+    public void setEmergencyReturnEnabled(Boolean emergencyReturnEnabled) {
+        this.emergencyReturnEnabled = emergencyReturnEnabled;
+    }
 }

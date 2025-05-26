@@ -36,4 +36,72 @@ public class GPSModule {
     public Long getId() {
         return id;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(Double longitude) {
+        this.longitude = longitude;
+    }
+
+    public Double getAltitude() {
+        return altitude;
+    }
+
+    public void setAltitude(Double altitude) {
+        this.altitude = altitude;
+    }
+
+    public String getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(String features) {
+        this.features = features;
+    }
+
+    public String getGpsPrecision() {
+        return gpsPrecision;
+    }
+
+    public void setGpsPrecision(String gpsPrecision) {
+        this.gpsPrecision = gpsPrecision;
+    }
+
+    public Boolean getGeofencingEnabled() {
+        return geofencingEnabled;
+    }
+
+    public void setGeofencingEnabled(Boolean geofencingEnabled) {
+        this.geofencingEnabled = geofencingEnabled;
+    }
+
+    public Boolean getRealTimeTrackingEnabled() {
+        return realTimeTrackingEnabled;
+    }
+
+    public void setRealTimeTrackingEnabled(Boolean realTimeTrackingEnabled) {
+        this.realTimeTrackingEnabled = realTimeTrackingEnabled;
+    }
 }
