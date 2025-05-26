@@ -1,1 +1,21 @@
-<p>camera-form works!</p>
+<div class="container mt-4">
+  <h2>Créer une Caméra</h2>
+  <form>
+    <div class="mb-3">
+      <label for="brand" class="form-label">Marque</label>
+      <input type="text" id="brand" class="form-control" name="brand" />
+    </div>
+
+    <div class="mb-3">
+      <label for="resolution" class="form-label">Résolution</label>
+      <input type="text" id="resolution" class="form-control" name="resolution" />
+    </div>
+
+    <div class="mb-3">
+      <label for="zoom" class="form-label">Zoom optique</label>
+      <input type="number" step="0.1" id="zoom" class="form-control" name="zoom" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Créer</button>
+  </form>
+</div>

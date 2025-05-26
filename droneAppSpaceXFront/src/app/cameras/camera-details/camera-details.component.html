@@ -1,1 +1,12 @@
-<p>camera-details works!</p>
+<div class="container mt-5 p-4 border rounded shadow">
+  <h2>Détails de la caméra</h2>
+  <p *ngIf="cameraId">Vous avez sélectionné la caméra avec l'ID : {{ cameraId }}</p>
+  <p *ngIf="!cameraId" class="text-danger">Aucune caméra sélectionnée.</p>
+
+  <!-- Détails fictifs, à remplacer par les données réelles -->
+  <div *ngIf="cameraId" class="mt-3">
+    <p><strong>Marque :</strong> Sony</p>
+    <p><strong>Résolution :</strong> 4K</p>
+    <p><strong>Zoom :</strong> 3.5x</p>
+  </div>
+</div>
