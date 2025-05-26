@@ -34,4 +34,9 @@ public class Drone {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "flight_controller_id", referencedColumnName = "id")
     private FlightController flightController;
+
+
+    public Long getId() {
+        return id;
+    }
 }

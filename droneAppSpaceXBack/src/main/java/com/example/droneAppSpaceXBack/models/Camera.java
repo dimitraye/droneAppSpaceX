@@ -19,4 +19,8 @@ public class Camera {
     private String brand; //Sony, Nicon, Samsung, etc.
 
     private Double zoom; // zoom optique numérique
+
+    public Long getId() {
+        return id;
+    }
 }
