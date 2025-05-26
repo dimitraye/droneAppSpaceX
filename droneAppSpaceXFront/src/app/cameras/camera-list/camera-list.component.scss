@@ -1,0 +1,17 @@
+.camera-box {
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+  background-color: #f8f9fa;
+}
+
+.scroll-box {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.camera-name {
+  cursor: pointer;
+  flex: 1;
+}

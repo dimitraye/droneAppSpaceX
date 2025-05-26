@@ -1,1 +1,23 @@
-<p>camera-list works!</p>
+<div class="camera-box container mt-5 p-4">
+  <h2 class="mb-3">Liste des caméras</h2>
+  <button class="btn btn-success mb-3" (click)="createCamera()">Créer une Caméra</button>
+
+  <div class="scroll-box">
+    <ul class="list-group">
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        *ngFor="let camera of cameras"
+        [class.active]="camera.id === selectedCamera"
+      >
+        <span class="camera-name" (click)="selectCamera(camera.id)">
+          {{ camera.brand }} - {{ camera.resolution }} - Zoom x{{ camera.zoom }}
+        </span>
+
+        <div class="btn-group">
+          <button class="btn btn-sm btn-outline-primary" (click)="editCamera(camera.id, $event)">Modifier</button>
+          <button class="btn btn-sm btn-outline-danger" (click)="deleteCamera(camera.id, $event)">Supprimer</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
