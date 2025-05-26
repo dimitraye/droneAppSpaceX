@@ -1,1 +1,23 @@
-<p>flightcontroller-list works!</p>
+<div class="flightcontroller-box container mt-5 p-4">
+  <h2 class="mb-3">Liste des FlightControllers</h2>
+  <button class="btn btn-success mb-3" (click)="createFlightController()">Créer un FlightController</button>
+
+  <div class="scroll-box">
+    <ul class="list-group">
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        *ngFor="let fc of flightControllers"
+        [class.active]="fc.id === selectedFlightController"
+      >
+        <span class="fc-name" (click)="selectFlightController(fc.id)">
+          {{ fc.name }}
+        </span>
+
+        <div class="btn-group">
+          <button class="btn btn-sm btn-outline-primary" (click)="editFlightController(fc.id, $event)">Modifier</button>
+          <button class="btn btn-sm btn-outline-danger" (click)="deleteFlightController(fc.id, $event)">Supprimer</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

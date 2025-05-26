@@ -1,1 +1,22 @@
-<p>flightcontroller-details works!</p>
+<div class="container mt-5 p-4 border rounded shadow">
+  <h2>Détails du FlightController</h2>
+
+  <ng-container *ngIf="flightController; else noSelection">
+    <p><strong>ID :</strong> {{ flightController.id }}</p>
+    <p><strong>Modèle :</strong> {{ flightController.model }}</p>
+    <p><strong>Modes de vol supportés :</strong> {{ flightController.supportedFlightModes }}</p>
+    <p><strong>Vitesse actuelle :</strong> {{ flightController.currentSpeed }} m/s</p>
+    <p><strong>Altitude cible :</strong> {{ flightController.targetAltitude }} m</p>
+    <p><strong>Interprétation des commandes :</strong> {{ flightController.commandInterpretation }}</p>
+    <p><strong>Stabilisation automatique activée :</strong>
+      {{ flightController.autoStabilizationEnabled ? 'Oui' : 'Non' }}
+    </p>
+    <p><strong>Retour d'urgence activé :</strong>
+      {{ flightController.emergencyReturnEnabled ? 'Oui' : 'Non' }}
+    </p>
+  </ng-container>
+
+  <ng-template #noSelection>
+    <p class="text-danger">Aucun FlightController sélectionné.</p>
+  </ng-template>
+</div>

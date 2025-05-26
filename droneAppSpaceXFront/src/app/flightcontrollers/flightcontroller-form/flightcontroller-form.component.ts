@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './flightcontroller-form.component.html',
-  styleUrl: './flightcontroller-form.component.scss'
+  styleUrls: ['./flightcontroller-form.component.scss']
 })
 export class FlightcontrollerFormComponent {
-
+  // Ici vous ajouterez plus tard la logique de ReactiveForm ou ngModel
 }
