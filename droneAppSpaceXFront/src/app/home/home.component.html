@@ -1,1 +1,22 @@
-<p>home works!</p>
+<div class="drone-box container mt-5 p-4">
+  <h2 class="mb-3">Liste des drones</h2>
+
+  <div class="scroll-box">
+    <ul class="list-group">
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+        *ngFor="let drone of drones"
+        [class.active]="drone.id === selectedDrone"
+      >
+        <span class="drone-name" (click)="selectDrone(drone.id)">
+          {{ drone.name }}
+        </span>
+
+        <div class="btn-group">
+          <button class="btn btn-sm btn-outline-primary" (click)="editDrone(drone.id, $event)">Modifier</button>
+          <button class="btn btn-sm btn-outline-danger" (click)="deleteDrone(drone.id, $event)">Supprimer</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
