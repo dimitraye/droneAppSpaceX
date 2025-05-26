@@ -39,4 +39,64 @@ public class Drone {
     public Long getId() {
         return id;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public Double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Double weight) {
+        this.weight = weight;
+    }
+
+    public Double getMaxRange() {
+        return maxRange;
+    }
+
+    public void setMaxRange(Double maxRange) {
+        this.maxRange = maxRange;
+    }
+
+    public Double getBatteryCapacity() {
+        return batteryCapacity;
+    }
+
+    public void setBatteryCapacity(Double batteryCapacity) {
+        this.batteryCapacity = batteryCapacity;
+    }
+
+    public Camera getCamera() {
+        return camera;
+    }
+
+    public void setCamera(Camera camera) {
+        this.camera = camera;
+    }
+
+    public GPSModule getGpsModule() {
+        return gpsModule;
+    }
+
+    public void setGpsModule(GPSModule gpsModule) {
+        this.gpsModule = gpsModule;
+    }
+
+    public FlightController getFlightController() {
+        return flightController;
+    }
+
+    public void setFlightController(FlightController flightController) {
+        this.flightController = flightController;
+    }
 }
