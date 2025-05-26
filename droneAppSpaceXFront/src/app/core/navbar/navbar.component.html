@@ -1,1 +1,37 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" (click)="goHome()">DroneApp</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" (click)="goHome()">Home</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" (click)="goToDrones()">Drones</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" (click)="goToCameras()">Cameras</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" (click)="goToGPSModules()">GPS Modules</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" (click)="goToFlightControllers()">Flight Controllers</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
