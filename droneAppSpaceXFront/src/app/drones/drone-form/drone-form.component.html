@@ -1,1 +1,51 @@
-<p>drone-form works!</p>
+<div class="container mt-4">
+  <h2>Créer un Drone</h2>
+  <form>
+    <div class="mb-3">
+      <label for="model" class="form-label">Modèle</label>
+      <input type="text" id="model" class="form-control" name="model" />
+    </div>
+
+    <div class="mb-3">
+      <label for="weight" class="form-label">Poids (kg)</label>
+      <input type="number" id="weight" class="form-control" name="weight" />
+    </div>
+
+    <div class="mb-3">
+      <label for="maxRange" class="form-label">Portée max (m)</label>
+      <input type="number" id="maxRange" class="form-control" name="maxRange" />
+    </div>
+
+    <div class="mb-3">
+      <label for="batteryCapacity" class="form-label">Capacité batterie (mAh)</label>
+      <input type="number" id="batteryCapacity" class="form-control" name="batteryCapacity" />
+    </div>
+
+    <div class="mb-3">
+      <label for="cameraId" class="form-label">Caméra</label>
+      <select id="cameraId" class="form-select" name="cameraId">
+        <option value="1">Canon - 12MP</option>
+        <option value="2">Sony - 20MP</option>
+        <option value="3">Nikon - 16MP</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="gpsModuleId" class="form-label">GPS Module</label>
+      <select id="gpsModuleId" class="form-select" name="gpsModuleId">
+        <option value="1">GPS Pro (1m précision)</option>
+        <option value="2">GPS Basic (5m précision)</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="flightControllerId" class="form-label">Contrôleur de vol</label>
+      <select id="flightControllerId" class="form-select" name="flightControllerId">
+        <option value="1">FC Model A</option>
+        <option value="2">FC Model B</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Créer</button>
+  </form>
+</div>
