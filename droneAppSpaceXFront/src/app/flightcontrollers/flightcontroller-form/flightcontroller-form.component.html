@@ -1,1 +1,47 @@
-<p>flightcontroller-form works!</p>
+<div class="container mt-4">
+  <h2>Créer un FlightController</h2>
+  <form>
+    <div class="mb-3">
+      <label for="model" class="form-label">Modèle</label>
+      <input type="text" id="model" class="form-control" name="model" />
+    </div>
+
+    <div class="mb-3">
+      <label for="supportedFlightModes" class="form-label">Modes de vol supportés</label>
+      <input type="text" id="supportedFlightModes" class="form-control" name="supportedFlightModes"
+             placeholder="Ex. Manual, GPS Hold, Waypoint" />
+    </div>
+
+    <div class="mb-3">
+      <label for="currentSpeed" class="form-label">Vitesse actuelle (m/s)</label>
+      <input type="number" step="any" id="currentSpeed" class="form-control" name="currentSpeed" />
+    </div>
+
+    <div class="mb-3">
+      <label for="targetAltitude" class="form-label">Altitude cible (m)</label>
+      <input type="number" step="any" id="targetAltitude" class="form-control" name="targetAltitude" />
+    </div>
+
+    <div class="mb-3">
+      <label for="commandInterpretation" class="form-label">Interprétation des commandes</label>
+      <textarea id="commandInterpretation" class="form-control" name="commandInterpretation" rows="2"
+                placeholder="Description du contrôleur..."></textarea>
+    </div>
+
+    <div class="form-check mb-2">
+      <input type="checkbox" id="autoStabilizationEnabled" class="form-check-input" name="autoStabilizationEnabled" />
+      <label class="form-check-label" for="autoStabilizationEnabled">
+        Stabilisation automatique activée
+      </label>
+    </div>
+
+    <div class="form-check mb-4">
+      <input type="checkbox" id="emergencyReturnEnabled" class="form-check-input" name="emergencyReturnEnabled" />
+      <label class="form-check-label" for="emergencyReturnEnabled">
+        Retour d'urgence activé
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Créer</button>
+  </form>
+</div>

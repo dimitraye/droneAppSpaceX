@@ -11,6 +11,7 @@ import { FlightcontrollerDetailsComponent } from './flightcontrollers/flightcont
 import { DroneFormComponent } from './drones/drone-form/drone-form.component';
 import { CameraFormComponent } from './cameras/camera-form/camera-form.component';
 import { GpsmoduleFormComponent } from './gpsmodules/gpsmodule-form/gpsmodule-form.component';
+import { FlightcontrollerFormComponent } from './flightcontrollers/flightcontroller-form/flightcontroller-form.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +25,7 @@ export const routes: Routes = [
   { path: 'gpsmodule-details/:id', component: GpsmoduleDetailsComponent },
   { path: 'gpsmodule-form', component: GpsmoduleFormComponent },
   { path: 'flightcontrollers', component: FlightcontrollerListComponent },
-  { path: 'flightcontrollers-details/:id', component: FlightcontrollerDetailsComponent },
+  { path: 'flightcontroller-details/:id', component: FlightcontrollerDetailsComponent },
+  { path: 'flightcontroller-form', component: FlightcontrollerFormComponent },
   
 ];
